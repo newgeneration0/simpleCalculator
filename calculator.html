@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/simpleCalculator/calculator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1><span>Simmple</span>ArithmeticCalculator</h1>
+    <table id="mathe">
+        <tr>
+        <td colspan="4"> <input type="text" id="results"></td>
+        </tr>
+        <tr>
+            <td><button class="deleteBtn" onclick="clr()">Clr</button></td>
+            <td><button onclick="toDisplay('%')" onclick="percentage()">%</button></td>
+            <td><button class="deleteBtn" onclick="backSpace()" ><i class="bi bi-backspace"></i></button></td>
+            <td><button onclick="toDisplay('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="num" onclick="toDisplay('7')">7</button></td>
+            <td><button class="num" onclick="toDisplay('8')">8</button></td>
+            <td><button class="num" onclick="toDisplay('9')">9</button></td>
+            <td><button onclick="toDisplay('*')"><i class="bi bi-x"></i></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="toDisplay('4')">4</button></td>
+            <td><button onclick="toDisplay('5')">5</button></td>
+            <td><button onclick="toDisplay('6')">6</button></td>
+            <td><button onclick="toDisplay('-')"><i class="bi bi-dash"></i></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="toDisplay('1')">1</button></td>
+            <td><button onclick="toDisplay('2')">2</button></td>
+            <td><button onclick="toDisplay('3')">3</button></td>
+            <td><button onclick="toDisplay('+')"><i class="bi bi-plus"></i></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="toDisplay('00')">00</button></td>
+            <td><button onclick="toDisplay('0')">0</button></td>
+            <td><button onclick="toDisplay('.')">.</button></td>
+            <td><button onclick="solve()">=</button></td>
+        </tr>
+       
+    </table>
+
+    <section id="footer">
+        <p>by Great<span>Ibb</span></p>
+    </section>
+
+    <script src="/simpleCalculator/calculator.js"></script>
+</body>
+</html>
